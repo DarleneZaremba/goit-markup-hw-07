@@ -1,0 +1,56 @@
+.features {
+    padding-bottom: 0px;
+  }
+  
+  .features__list {
+    display: flex;
+  }
+  .features__item {
+    margin-right: 30px;
+    flex-basis: 270px;
+
+    &:last-child{
+        margin-right: 0;
+    }
+  }
+ 
+  
+
+  
+  .features__title {
+    color: $title-text-color;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    text-align: left;
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
+  
+  .features__desc {
+    color: $main-text-color;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    text-align: left;
+  }
+  
+  /* FEATURES ICONS */
+  
+  .features__antenna,
+  .features__clock,
+  .features__computer,
+  .features__astronaut {
+    width: 70px;
+    height: 70px;
+  }
+  
+  .features__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5f4fa;
+    margin-bottom: 30px;
+  
+    height: 120px;
+    width: 270px;
+  }
