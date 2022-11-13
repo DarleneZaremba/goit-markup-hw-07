@@ -41,12 +41,20 @@
     border-radius: 50%;
     border: 1px solid rgba(0, 0, 0, 0.1);
     cursor: pointer;
+
   }
   
-  .modal__btn:hover .modal__close-icon,
-  .modal__btn:focus .modal__close-icon{
-    fill: var(--accent-color);
+  .modal__close-icon{
+  transition: fill 250ms $time-function ;
+  
+  .modal__btn:focus, .modal__btn:hover &{
+
+    fill: $accent-color;
   }
+
+}
+
+
   
   .modal__title{
     padding-right: 40px;

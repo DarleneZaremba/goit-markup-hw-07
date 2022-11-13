@@ -737,9 +737,12 @@ ul {
   cursor: pointer;
 }
 
-.modal__btn:hover .modal__close-icon,
-.modal__btn:focus .modal__close-icon {
-  fill: var(--accent-color);
+.modal__close-icon {
+  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal__close-icon .modal__btn:focus, .modal__btn:hover .modal__close-icon {
+  fill: #2196f3;
 }
 
 .modal__title {
@@ -775,6 +778,7 @@ ul {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   margin-bottom: 10px;
+  margin-top: 4px;
   padding: 0;
   padding-left: 42px;
   -webkit-transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1), outline 250ms cubic-bezier(0.4, 0, 0.2, 1);
